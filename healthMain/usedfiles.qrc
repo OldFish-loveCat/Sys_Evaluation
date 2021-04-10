@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/myimg">
+        <file>image/logui.jpg</file>
+    </qresource>
+</RCC>

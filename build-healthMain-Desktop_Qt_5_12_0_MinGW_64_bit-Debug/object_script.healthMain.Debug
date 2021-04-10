@@ -1,0 +1,10 @@
+debug/main.o
+debug/mainview.o
+debug/welcome.o
+debug/histroyassess.o
+debug/nurseplans.o
+debug/qrc_usedfiles.o
+debug/moc_mainview.o
+debug/moc_welcome.o
+debug/moc_histroyassess.o
+debug/moc_nurseplans.o

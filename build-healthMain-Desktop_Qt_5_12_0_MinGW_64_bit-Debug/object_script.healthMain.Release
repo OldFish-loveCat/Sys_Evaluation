@@ -1,0 +1,10 @@
+release/main.o
+release/mainview.o
+release/welcome.o
+release/histroyassess.o
+release/nurseplans.o
+release/qrc_usedfiles.o
+release/moc_mainview.o
+release/moc_welcome.o
+release/moc_histroyassess.o
+release/moc_nurseplans.o
