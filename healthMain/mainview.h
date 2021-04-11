@@ -2,8 +2,10 @@
 #define MAINVIEW_H
 
 #include <QMainWindow>
+#include <QDialog>
 #include <histroyassess.h>
 #include <nurseplans.h>
+#include <addmerber.h>
 
 
 namespace Ui {
@@ -23,10 +25,13 @@ private slots:
 
     void on_nurseAssess_clicked();
 
+    void on_addMember_clicked();
+
 private:
     Ui::Mainview *ui;
     HistroyAssess *historyassess;
     NursePlans *nurseplans;
+    AddMerber *addmerber;
 
 };
 
