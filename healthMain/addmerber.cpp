@@ -12,3 +12,9 @@ AddMerber::~AddMerber()
 {
     delete ui;
 }
+
+void AddMerber::on_healthAssess_clicked()
+{
+    healthassess = new HealthAssess();
+    healthassess->show();
+}

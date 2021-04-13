@@ -30,21 +30,24 @@ SOURCES += \
     welcome.cpp \
     histroyassess.cpp \
     nurseplans.cpp \
-    addmerber.cpp
+    addmerber.cpp \
+    healthassess.cpp
 
 HEADERS += \
         mainview.h \
     welcome.h \
     histroyassess.h \
     nurseplans.h \
-    addmerber.h
+    addmerber.h \
+    healthassess.h
 
 FORMS += \
         mainview.ui \
     welcome.ui \
     histroyassess.ui \
     nurseplans.ui \
-    addmerber.ui
+    addmerber.ui \
+    healthassess.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
