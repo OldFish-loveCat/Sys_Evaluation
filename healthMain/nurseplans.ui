@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>评估结果及护理计划界面</string>
   </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
@@ -46,7 +46,7 @@
      <bool>true</bool>
     </property>
     <property name="text">
-     <string>最近评估结果</string>
+     <string>当前评估结果</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -104,39 +104,175 @@
      <string>查看详情</string>
     </property>
    </widget>
-   <widget class="QTableWidget" name="nursePlan">
+   <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>130</y>
-      <width>461</width>
-      <height>231</height>
+      <x>10</x>
+      <y>120</y>
+      <width>481</width>
+      <height>281</height>
      </rect>
     </property>
-    <column>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>120</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
      <property name="text">
-      <string>护理计划</string>
+      <string> 护 理 措 施 </string>
      </property>
-     <property name="textAlignment">
-      <set>AlignCenter</set>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
-    </column>
-    <column>
+    </widget>
+    <widget class="QCheckBox" name="rB1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
      <property name="text">
-      <string>完成情况(百分比)</string>
+      <string>1、</string>
      </property>
-     <property name="textAlignment">
-      <set>AlignCenter</set>
+    </widget>
+    <widget class="QCheckBox" name="rB2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
      </property>
-    </column>
-    <column>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
      <property name="text">
-      <string>计划详情</string>
+      <string>2、</string>
      </property>
-     <property name="textAlignment">
-      <set>AlignCenter</set>
+    </widget>
+    <widget class="QCheckBox" name="rB3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
      </property>
-    </column>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>3、</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="rB4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>190</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>4、</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="plan1">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>70</y>
+       <width>251</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="plan2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>110</y>
+       <width>251</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="plan4">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>190</y>
+       <width>251</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="plan3">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>150</y>
+       <width>251</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="mplans">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>240</y>
+       <width>120</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>生成护理计划</string>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>

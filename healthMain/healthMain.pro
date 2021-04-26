@@ -31,7 +31,8 @@ SOURCES += \
     histroyassess.cpp \
     nurseplans.cpp \
     addmerber.cpp \
-    healthassess.cpp
+    healthassess.cpp \
+    plansdetails.cpp
 
 HEADERS += \
         mainview.h \
@@ -39,7 +40,8 @@ HEADERS += \
     histroyassess.h \
     nurseplans.h \
     addmerber.h \
-    healthassess.h
+    healthassess.h \
+    plansdetails.h
 
 FORMS += \
         mainview.ui \
@@ -47,7 +49,8 @@ FORMS += \
     histroyassess.ui \
     nurseplans.ui \
     addmerber.ui \
-    healthassess.ui
+    healthassess.ui \
+    plansdetails.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

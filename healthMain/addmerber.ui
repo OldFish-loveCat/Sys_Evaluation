@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>660</width>
+    <width>760</width>
     <height>410</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>660</width>
+    <width>760</width>
     <height>410</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>660</width>
+    <width>760</width>
     <height>410</height>
    </size>
   </property>
@@ -30,7 +30,7 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>641</width>
+     <width>741</width>
      <height>391</height>
     </rect>
    </property>
@@ -40,21 +40,11 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QTextEdit" name="headimg">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>110</width>
-      <height>140</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="healthAssess">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>190</y>
+      <x>420</x>
+      <y>350</y>
       <width>110</width>
       <height>30</height>
      </rect>
@@ -68,13 +58,31 @@
      <string>健康评估</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="infoCommit">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>350</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>提交</string>
+    </property>
+   </widget>
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>20</y>
-      <width>501</width>
-      <height>321</height>
+      <x>10</x>
+      <y>10</y>
+      <width>721</width>
+      <height>331</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -83,38 +91,33 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLineEdit" name="name">
+    <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>30</y>
-       <width>84</width>
+       <x>170</x>
+       <y>20</y>
+       <width>60</width>
        <height>25</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>过敏史:</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLineEdit" name="sex">
+    <widget class="QLineEdit" name="contacts">
      <property name="geometry">
       <rect>
-       <x>240</x>
-       <y>30</y>
-       <width>84</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="age">
-     <property name="geometry">
-      <rect>
-       <x>410</x>
-       <y>30</y>
-       <width>84</width>
+       <x>80</x>
+       <y>290</y>
+       <width>101</width>
        <height>25</height>
       </rect>
      </property>
@@ -126,7 +129,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>30</y>
+       <y>20</y>
        <width>60</width>
        <height>25</height>
       </rect>
@@ -143,11 +146,53 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="label_2">
+    <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
-       <x>350</x>
-       <y>30</y>
+       <x>380</x>
+       <y>290</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>电话:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>290</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>关系:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>20</y>
        <width>60</width>
        <height>25</height>
       </rect>
@@ -158,17 +203,182 @@
       </font>
      </property>
      <property name="text">
-      <string>年龄:</string>
+      <string>过敏源:</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="label_3">
+    <widget class="QRadioButton" name="allergyCheckY">
      <property name="geometry">
       <rect>
-       <x>180</x>
-       <y>30</y>
+       <x>250</x>
+       <y>20</y>
+       <width>41</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>有</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="allergyCheckN">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>20</y>
+       <width>41</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>无</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="TelNum">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>290</y>
+       <width>251</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="allergySrc">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>20</y>
+       <width>255</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="relationshipBox">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>290</y>
+       <width>81</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>夫妻关系</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>父子关系</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>父女关系</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>母子关系</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>母女关系</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>朋友关系</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>亲戚关系</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>70</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>既往史及家族史:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>290</y>
+       <width>60</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>联系人:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="name">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>84</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Sex">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>70</y>
+       <width>84</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
        <width>60</width>
        <height>25</height>
       </rect>
@@ -185,11 +395,11 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="label_4">
+    <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>90</y>
+       <y>170</y>
        <width>60</width>
        <height>25</height>
       </rect>
@@ -200,120 +410,18 @@
       </font>
      </property>
      <property name="text">
-      <string>过敏史：</string>
+      <string>编号:</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="label_5">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>150</y>
-       <width>60</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>既往史：</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_6">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>210</y>
-       <width>60</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>家族史：</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="allergyCheckY">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>90</y>
-       <width>41</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>有</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="allergyCheckN">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>90</y>
-       <width>41</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>无</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_7">
-     <property name="geometry">
-      <rect>
-       <x>180</x>
-       <y>90</y>
-       <width>60</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>过敏源：</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="allergySrc">
-     <property name="geometry">
-      <rect>
-       <x>240</x>
-       <y>90</y>
-       <width>255</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="previousHIstory">
+    <widget class="QLineEdit" name="Number">
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>150</y>
-       <width>425</width>
+       <y>170</y>
+       <width>84</width>
        <height>25</height>
       </rect>
      </property>
@@ -321,12 +429,12 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLineEdit" name="familyHistory">
+    <widget class="QLineEdit" name="Age">
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>210</y>
-       <width>425</width>
+       <y>120</y>
+       <width>84</width>
        <height>25</height>
       </rect>
      </property>
@@ -334,11 +442,11 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="label_8">
+    <widget class="QLabel" name="label_11">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>270</y>
+       <y>120</y>
        <width>60</width>
        <height>25</height>
       </rect>
@@ -349,75 +457,41 @@
       </font>
      </property>
      <property name="text">
-      <string>联系人：</string>
+      <string>年龄:</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="label_9">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>270</y>
-       <width>51</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>关系：</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="contacts">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>270</y>
-       <width>69</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="relationshipBox">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>270</y>
-       <width>69</width>
-       <height>25</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="TelNum">
-     <property name="geometry">
-      <rect>
-       <x>350</x>
-       <y>270</y>
-       <width>145</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_10">
+    <widget class="QTextEdit" name="FamilyHistory">
      <property name="geometry">
       <rect>
        <x>290</x>
-       <y>270</y>
-       <width>60</width>
+       <y>70</y>
+       <width>411</width>
+       <height>141</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="TelNum_3">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>240</y>
+       <width>251</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>111</width>
        <height>25</height>
       </rect>
      </property>
@@ -427,30 +501,73 @@
       </font>
      </property>
      <property name="text">
-      <string>电话：</string>
+      <string>现存疾病诊断:</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-   </widget>
-   <widget class="QPushButton" name="infoCommit">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>350</y>
-      <width>110</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>提交</string>
-    </property>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>240</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>自评健康状况:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="healthSelfbox">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>240</y>
+       <width>91</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>非常健康</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>很健康</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>比较健康</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>一般</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>不健康</string>
+      </property>
+     </item>
+    </widget>
    </widget>
   </widget>
  </widget>

@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <histroyassess.h>
+#include <plansdetails.h>
 
 namespace Ui {
 class NursePlans;
@@ -19,11 +20,12 @@ public:
 private slots:
     void on_pushButton_clicked();
 
-    void on_verticalScrollBar_sliderMoved(int position);
+    void on_mplans_clicked();
 
 private:
     Ui::NursePlans *ui;
     HistroyAssess *historyassess;
+    Plansdetails *plandetails;
 };
 
 #endif // NURSEPLANS_H

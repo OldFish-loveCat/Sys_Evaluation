@@ -19,3 +19,9 @@ void NursePlans::on_pushButton_clicked()
     historyassess = new HistroyAssess();
     historyassess->show();
 }
+
+void NursePlans::on_mplans_clicked()
+{
+    plandetails = new Plansdetails();
+    plandetails->show();
+}
