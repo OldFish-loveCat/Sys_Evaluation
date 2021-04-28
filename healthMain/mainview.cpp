@@ -9,6 +9,9 @@ Mainview::Mainview(QWidget *parent) :
     ui(new Ui::Mainview)
 {
     ui->setupUi(this);
+    menber = 0;
+    ui->showmember->hide();
+
 }
 
 Mainview::~Mainview()
@@ -38,9 +41,25 @@ void Mainview::on_addMember_clicked()
     {
         addmerber = new AddMerber();
         addmerber->show();
+        ui->showmember->show();
     }
     else
     {
         QMessageBox::information(this, tr("已确认"), tr("成员创建已取消！"));
     }
+    menber ++;
+}
+
+void Mainview::showmembers()
+{
+    ;
+}
+
+
+
+
+void Mainview::on_showmember_clicked()
+{
+    members = new Members();
+    members->show();
 }

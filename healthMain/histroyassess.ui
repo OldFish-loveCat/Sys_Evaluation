@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>历史记录</string>
   </property>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
@@ -42,7 +42,7 @@
      </rect>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string>历史记录1</string>
     </property>
    </widget>
    <widget class="QPushButton" name="returnBack">

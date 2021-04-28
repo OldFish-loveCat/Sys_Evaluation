@@ -6,6 +6,7 @@
 #include <histroyassess.h>
 #include <nurseplans.h>
 #include <addmerber.h>
+#include <members.h>
 
 
 namespace Ui {
@@ -20,6 +21,9 @@ public:
     explicit Mainview(QWidget *parent = nullptr);
     ~Mainview();
 
+signals:
+    void sendmakemember(void);
+
 private slots:
     void on_historyAssess_clicked();
 
@@ -27,11 +31,19 @@ private slots:
 
     void on_addMember_clicked();
 
+    void on_showmember_clicked();
+
 private:
+    int menber;
     Ui::Mainview *ui;
     HistroyAssess *historyassess;
     NursePlans *nurseplans;
     AddMerber *addmerber;
+    Members *members;
+
+    void makepushbutton(QString name, QString content);
+    void showoutmember();
+    void showmembers();
 
 };
 

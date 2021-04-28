@@ -19,6 +19,8 @@ public:
 private slots:
     void on_healthAssess_clicked();
 
+    void on_infoCommit_clicked();
+
 private:
     Ui::AddMerber *ui;
     HealthAssess *healthassess;
